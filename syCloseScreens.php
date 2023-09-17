@@ -1,7 +1,7 @@
 <?php
 
-  // This small script is showing how to use the syFramework.php. It actually closes my 3 screens (left, center and right) for a duration of 10 secs and then stop them.
-  // The result is : my screens are approximatively closed at 50%
+  	// This small script is showing how to use the syFramework.php. It actually closes my 3 screens (left, center and right) for a duration of 10 secs and then stop them.
+	// The result is : my screens are approximatively closed at 50%
 
 	include_once 'syFramework.php';
 
