@@ -42,7 +42,7 @@
 		// ------------------
 
 		$api=$endPointURL."enduser-mobile-web/enduserAPI/login";
-    $curl = curl_init($api);
+    		$curl = curl_init($api);
 
 		$data = array('userId' => $syUsernamz, 'userPassword' => $syPassword);
 		$headers = array('Content-Type: application/x-www-form-urlencoded');
@@ -54,9 +54,9 @@
 		curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($data)); 
 
 		$result = curl_exec($curl);
-   	curl_close($curl);
+   		curl_close($curl);
 
-   	$cookies = array();
+   		$cookies = array();
 
 		preg_match_all('/^Set-Cookie:\s*([^;]*)/mi', $result, $matches);
 		$cookies = array();
@@ -73,7 +73,7 @@
 		// ------------------
 		
 		$api=$endPointURL."enduser-mobile-web/enduserAPI/config/".$tahomaPin."/local/tokens/generate";				
-    $curl = curl_init($api);
+    		$curl = curl_init($api);
 
 		$headers = array('Cookie: JSESSIONID='.$sessionCookie);		
 
@@ -81,18 +81,18 @@
 		curl_setopt($curl, CURLOPT_HTTPHEADER, $headers); 		// Set custom headers
 
 		$result = json_decode(curl_exec($curl));
-    curl_close($curl);
+    		curl_close($curl);
     	
-    $token=$result->token;
+    		$token=$result->token;
     	
 		// ---------------------
 		// 3) Activate the token
 		// ---------------------
 
 		$api=$endPointURL."enduser-mobile-web/enduserAPI/config/".$tahomaPin."/local/tokens";				
-    $curl = curl_init($api);
+    		$curl = curl_init($api);
     	
-    $payLoad='{"label": "MyToken","token": "'.$token.'","scope": "devmode"}';
+    		$payLoad='{"label": "MyToken","token": "'.$token.'","scope": "devmode"}';
 		$headers = array('Cookie: JSESSIONID='.$sessionCookie,'Content-Type: application/json','Cookie: JSESSIONID='.$sessionCookie);		
 
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true); 		// Return the response as a string
@@ -101,7 +101,7 @@
 		curl_setopt($curl, CURLOPT_POSTFIELDS, $payLoad); 
 
 		$result = curl_exec($curl);
-    curl_close($curl);
+    		curl_close($curl);
 
 		return($token);
 	}
@@ -523,7 +523,7 @@
 	{
 		
 		$api="/enduser-mobile-web/1/enduserAPI/setup/devices";				
-    	$curl = curl_init($api);
+    		$curl = curl_init($api);
 
 		curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1);
 		curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json','Authorization: Bearer '.$token));
@@ -533,7 +533,7 @@
 		curl_setopt($curl, CURLOPT_URL, "https://gateway-".$tahomaPin.".local:8443".$api);
 
 		$result = json_decode(curl_exec($curl));
-    	curl_close($curl);
+    		curl_close($curl);
     	
 		$devices=array();
 		for($i=0;$i<count($result);$i++)
