@@ -1,6 +1,6 @@
 #Somfy Php Framework
 
-![logo0]([https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Somfy_logo.svg/1200px-Somfy_logo.svg.png](https://www.somfypro.nl/image/journal/article?img_id=73615698&t=1567601687139))	![logo1](https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/062015/php_0.png?itok=W6WL-Rbh)	
+![logo0]([https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Somfy_logo.svg/1200px-Somfy_logo.svg.png](https://www.somfypro.nl/image/journal/article?img_id=73615698&t=1567601687139)	![logo1](https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/062015/php_0.png?itok=W6WL-Rbh)	
 
 ## Background
 This project's goal is to provide anyone who needs to script automation, a collection of functions that call Somfy APIs.
