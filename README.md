@@ -52,7 +52,7 @@ The above will display :
     ["name"]=>
     string(6) "Led 1 "
     ["url"]=>
-    string(27) "io://20xx-30xx-0596/5101624"
+    string(27) "io://20xx-30xx-05xx/5101624"
     ["type"]=>
     string(11) "DimmerLight"
   }
@@ -61,7 +61,7 @@ The above will display :
     ["name"]=>
     string(5) "Led 2"
     ["url"]=>
-    string(27) "io://20xx-30xx-0596/5839490"
+    string(27) "io://20xx-30xx-05xx/5839490"
     ["type"]=>
     string(11) "DimmerLight"
   }
