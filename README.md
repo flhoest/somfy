@@ -1,4 +1,4 @@
-##Somfy Php Framework
+## Somfy Php Framework
 
 ![logo0](https://www.somfypro.nl/image/journal/article?img_id=73615698&t=1567601687139)	![logo1](https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/062015/php_0.png?itok=W6WL-Rbh)	
 
@@ -52,7 +52,7 @@ The above will display :
     ["name"]=>
     string(6) "Led 1 "
     ["url"]=>
-    string(27) "io://2022-3032-0596/5101624"
+    string(27) "io://20xx-30xx-0596/5101624"
     ["type"]=>
     string(11) "DimmerLight"
   }
@@ -61,7 +61,7 @@ The above will display :
     ["name"]=>
     string(5) "Led 2"
     ["url"]=>
-    string(27) "io://2022-3032-0596/5839490"
+    string(27) "io://20xx-30xx-0596/5839490"
     ["type"]=>
     string(11) "DimmerLight"
   }
