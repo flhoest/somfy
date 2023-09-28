@@ -19,7 +19,7 @@
 	{
 		$api="/json.htm?type=command&param=getSunRiseSet";		
 
-    	$curl = curl_init($api);
+    		$curl = curl_init($api);
 
 		curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1);
 		curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -28,7 +28,7 @@
 		curl_setopt($curl, CURLOPT_URL, "https://".$domoticzIP.$api);
 
 		$result = json_decode(curl_exec($curl));
-    curl_close($curl);
+    		curl_close($curl);
 
 		return($result);
 	
@@ -42,7 +42,7 @@
 	{
 		$api="/json.htm?type=devices&rid=".$idx;		
 
-    $curl = curl_init($api);
+    		$curl = curl_init($api);
 
 		curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1);
 		curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
@@ -51,7 +51,7 @@
 		curl_setopt($curl, CURLOPT_URL, "https://".$domoticzIP.$api);
 
 		$result = json_decode(curl_exec($curl));
-    curl_close($curl);
+    		curl_close($curl);
 
 		return($result);
 	
@@ -99,7 +99,7 @@
 	// Need to address right key in the array, this is not always the same. Sometimes 4 sometimes 5
 	for($i=0;$i<count($currRoofPos);$i++)
 	{
-    // print($currRoofPos[$i]->name."\n");
+    		// print($currRoofPos[$i]->name."\n");
 		if($currRoofPos[$i]->name == "core:ManufacturerSettingsState") $tmp=$currRoofPos[$i]->value->current_position;
 	}
 	$currRoofPos=$tmp;
