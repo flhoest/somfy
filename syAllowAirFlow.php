@@ -5,10 +5,10 @@
 	$domoticzIP="<your_domoticz_ip>";
 	$sensorID=<your_sensor_id>;
 	$maxTemp=<your_max_temperature>;
-	$roofTimer="<your_timer_moving_the_roof>";
-	$roofAddress="<your_roof_address>";
+	$roofTimer="<your_timer_for_moving_the_roof>";
+	$roofAddress="<your_roof_io_address>";
 
-	// Set the default time zone for data-based functions
+	// Set the default time zone for date-based functions
 	date_default_timezone_set("Europe/Brussels");
 	
 	//--------------------------------------------------------------------
